@@ -47,8 +47,6 @@ void check(int airSwitchPin, int &timer, int internalVentPin, int externalVentPi
   // If the fan is on
   if (digitalRead(fanSwitchPin) == HIGH) {
 
-    Recirculate(internalVentPin, externalVentPin);
-
     // If air is flowing...
     if (digitalRead(airSwitchPin) == HIGH) {
 
